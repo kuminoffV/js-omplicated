@@ -1,28 +1,16 @@
 let num = 266219;
 
-// получили массви в числ числа 266219
+// получили массив в чисел числа 266219
 let array = ('' + num).split('').map(Number);
 
-
-//вывели полученный массив
-console.log(array);
-
-// посчитали длину массива
-lengthArray = array.length;
-
-// цикл перемножения
-let composition = 1;
-while (lengthArray > 0) {
-  lengthArray--;
-  composition *= array[lengthArray];
-}
-
-// вывели результат перемножения
-console.log(composition);
-
+// выполнили перемножние чисел числа 266219
+const multiplication = array.reduce(function (currentMul, currentNumber) {
+  return currentMul * currentNumber;
+}, 1);
+console.log(multiplication);
 
 // возвели результат перемножения в степень 3
-degree = composition ** 3;
+degree = multiplication ** 3;
 console.log(degree);
 
 // вывели в консоль первые две цифры полученного числа

@@ -1,6 +1,6 @@
 let lang = prompt('Какой язык выбираете? (ru/en)');
 const weekDaysRu = "Понедельник\nВторник\nСреда\nЧетверг\nПятница\nСуббота\nВоскресенье";
-const weekDaysEn = "Monday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday";
+const weekDaysEn = "Monday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday"; 
 const langArr = [];
 
 // первый способ

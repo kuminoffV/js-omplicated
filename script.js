@@ -22,7 +22,6 @@ switch (true) {
         break;
     default:
         alert("Упс. Вы написали что-то не то...");
-        break;
 }
 
 // третий способ

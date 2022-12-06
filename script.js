@@ -1,19 +1,15 @@
 "use strict";
 
+let strTrans, abbreviatedText;
+
 const stringReduction = function (str) {
 
     if (typeof (str) !== "string") {
-        alert('Вы ввели не строку, пожалуйста, напишите строку');
-        return;
+        return (TypeError('Введена не строка'));
     }
-
-    let strTrans = str.trim();
-
-    if (strTrans.length > 30) {
-        console.log(strTrans.substring(0, 29) + "...");
-    } else {
-        console.log(strTrans);
-    }
+    strTrans = str.trim();
+    strTrans.length > 30 ? abbreviatedText = str.trim().substring(0, 29) + "..." : abbreviatedText = str.trim(); 
+    return abbreviatedText;
 };
 
-stringReduction(prompt('Введите какую-нибудь строку'));
+console.log(stringReduction(prompt('Введите какую-нибудь строку')));

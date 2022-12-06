@@ -1,6 +1,6 @@
 "use strict";
 
-let strTrans, abbreviatedText;
+let strTrans;
 
 const stringReduction = function (str) {
 
@@ -8,8 +8,8 @@ const stringReduction = function (str) {
         return (TypeError('Введена не строка'));
     }
     strTrans = str.trim();
-    strTrans.length > 30 ? abbreviatedText = str.trim().substring(0, 29) + "..." : abbreviatedText = str.trim(); 
-    return abbreviatedText;
+    strTrans.length > 30 ? strTrans = str.trim().substring(0, 29) + "..." : strTrans = str.trim(); 
+    return strTrans;
 };
 
 console.log(stringReduction(prompt('Введите какую-нибудь строку')));

@@ -1,15 +1,7 @@
 'use strict';
 
-const week = [
-'Понедельник',
-'Вторник',
-'Среда',
-'Четверг',
-'Пятница',
-'Суббота',
-'Воскресенье',
-];
-let day = new Date().getDay();
+const week = ['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресенье',];
+let day = new Date().getDay() - 1;
 let today = week[day];
 console.log(`today ${today}`);
 
@@ -31,5 +23,4 @@ const weekList = function (arr) {
           }
      }
 };
-
 weekList(week);

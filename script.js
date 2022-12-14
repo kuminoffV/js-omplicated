@@ -30,7 +30,8 @@ function numstr(n, text_forms) {
     }
     if (n1 === 1) {
         return text_forms[0];
-    }
+  }
+  
     return text_forms[2];
 };
 

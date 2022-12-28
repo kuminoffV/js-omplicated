@@ -12,6 +12,9 @@ let activeDump = false;
 let flyTime;
 let flyDumpTime;
 
+air.style.left = 0;
+man.style.top = 0;
+
 const flyAir = () => {
   countFly++;
   flyTime = requestAnimationFrame(flyAir);

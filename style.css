@@ -1,0 +1,29 @@
+#air {
+    position: absolute;
+    
+}
+
+#man {
+    position: absolute;
+    z-index: -1;
+    margin-top: 70px;
+    margin-left: 150px;
+}
+
+#reset {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+#animation_1 {
+    position: absolute;
+    top: 150px;
+    left: 75px;
+}
+
+#animation {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}

@@ -9,7 +9,11 @@ const showText = () => {
   console.log("Функция работает");
 };
 
-userInput.addEventListener("input", () => {
+const intervalFunk = () => {
   clearTimeout(intervalID);
   intervalID = setTimeout(showText, 300);
+};
+
+userInput.addEventListener("input", () => {
+  intervalFunk();
 });
